@@ -8,6 +8,7 @@ export default function LocationList(){
         async function getLocations() {
             const locations = await locationsAPI.getLocation()
             setLocations(locations)
+            console.log(locations)
         }
         getLocations()
     }, [])
