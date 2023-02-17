@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import LocationListCard from "./LocationListCard"
 import * as locationsAPI from "../../utilities/location-api"
   
 export default function LocationList(){
@@ -17,9 +18,17 @@ export default function LocationList(){
     return(
         <>
            <h3>Hello this is the list</h3>
-      
-
-
+            {
+                locations.map((location, index) => {
+                    return(
+                        <>
+                            <LocationListCard location={location} index={index} />
+                        </>
+                    )
+                   
+                })
+            }
+ (added location render functionality to homepage)
         </>
      
     )
