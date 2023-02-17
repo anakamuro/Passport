@@ -14,6 +14,7 @@ export default function LocationList(){
         getLocations()
     }, [])
 
+    const locationItem = locations.map((location, index) => <LocationListCard location={location} index={index} key={index} />)
 
     return(
         <>
@@ -29,7 +30,21 @@ export default function LocationList(){
                 })
             }
  (added location render functionality to homepage)
+
+           {locationItem}
         </>
      
     )
 }
+
+
+// {
+//     locations.map((location, index) => {
+//         return(
+//             <>
+//                 <LocationListCard location={location} index={index} />
+//             </>
+//         )
+       
+//     })
+// }
