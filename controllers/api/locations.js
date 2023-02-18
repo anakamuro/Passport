@@ -28,6 +28,7 @@ async function create(req, res) {
     }
 }
 
+<<<<<<< HEAD
 async function updateLocation(req, res) {
     try{
             //find by Id 
@@ -55,6 +56,8 @@ async function deleteLocation(req, res) {
 
 
 
+=======
+>>>>>>> 35b3a40 (get subdoc to post)
 module.exports = {
     index,
     show,
