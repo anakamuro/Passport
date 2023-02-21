@@ -8,6 +8,7 @@ export default function LocationListCard({ location }){
             <p>From: {location.dateFrom}</p>
             <p>To: {location.dateTo}</p>
             <p>Notes: {location.note}</p>
+            {/* <p>Notes: {location.note} </p> */}
         </Link> 
     )
 }
